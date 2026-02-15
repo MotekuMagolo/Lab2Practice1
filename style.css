@@ -1,0 +1,131 @@
+/* ----------------------------------
+   SITE 1: Simple Portfolio
+   Practicing basic CSS properties
+---------------------------------- */
+
+/* ----- RESET / GLOBAL ----- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+/* ----- HEADER (element selector) ----- */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* ----- CLASS SELECTOR EXAMPLE ----- */
+.subhead {
+    font-size: 1.2rem;
+    color: #ecf0f1;
+    font-style: italic;
+}
+
+/* ----- NAVIGATION (FLEXBOX!) ----- */
+nav {
+    background-color: #34495e;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* ----- LINK STYLING + HOVER ----- */
+nav a:hover {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+/* ----- MAIN SECTIONS ----- */
+main {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+/* ----- CLASS SELECTOR (different style) ----- */
+.highlight {
+    background-color: #fffacd;
+    padding: 10px;
+    border-left: 4px solid #e67e22;
+    margin-top: 10px;
+}
+
+/* ----- SKILLS LIST ----- */
+.skills ul {
+    list-style-position: inside;
+    columns: 2;
+    margin-top: 10px;
+}
+
+.skills li {
+    margin-bottom: 5px;
+    padding-left: 5px;
+}
+
+/* ----- FOOTER ----- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #34495e;
+    color: white;
+    border-radius: 8px;
+}
+
+footer a {
+    color: #f1c40f;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
